@@ -100,3 +100,12 @@ header {
     font-size: 18px;
     width: 90%;
 }
+
+a {
+    text-decoration: none;
+    color: var(--DARKGREY);
+}
+
+.navbar ul {
+    list-style-type: none;
+}
