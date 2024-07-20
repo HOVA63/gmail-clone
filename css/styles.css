@@ -160,3 +160,13 @@ ul li:hover ul.dropdown {
     font-size: 24px;
     display: inline-block;
 }
+
+.top {
+    display: flex;
+    flex: center;
+    justify-content: center;
+    height: 900px;
+    width: 900px;
+    background-color: white;
+    border-radius: 3%;
+}
