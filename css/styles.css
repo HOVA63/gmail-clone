@@ -161,12 +161,103 @@ ul li:hover ul.dropdown {
     display: inline-block;
 }
 
-.top {
-    display: flex;
-    flex: center;
-    justify-content: center;
-    height: 900px;
-    width: 900px;
-    background-color: white;
-    border-radius: 3%;
+.maincontent {
+    margin-top: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #e9ecef;
+    overflow: hidden;
 }
+
+.content_icon,
+.star{
+    transition: all 0.3s;
+    width: 16px;
+    height: 16px;
+    color: var(--DARKGREY);
+    padding: 8px;
+    border-radius: 50%
+}
+
+.chev {
+    color: #b1b1b1;
+}
+
+.maincontent .top {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    color: var(--DARKGREY);
+}
+
+.messages:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 4px 0.2px rgba(0,0,0,0.2);
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+}
+
+.check img {
+    height: 24px;
+    cursor: pointer;
+}
+
+.check span {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    display: none;
+}
+
+.check img:hover + span {
+    transition: all 0.3s;
+    display: inline;
+}
+
+.sort_numbers {
+    transition: all 0.3s;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.maincontent .top .right,
+.maincontent .top .left,
+.maincontent .messages .messages_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.messages_area {
+    height: 80vh;
+    overflow: auto;
+}
+
+.messages {
+    height: 45px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 0.8px solid #ced4da;
+    color: var(--DARKGREY);
+}
+
+.check_2 span {
+    left: 5px;
+}
+
+.messages_left ion-icon:hover {
+    color: #000;
+}
+
